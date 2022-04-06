@@ -4,7 +4,7 @@ class BasePage
         cy.readFile('UITests/Data/data.json').then((data) => {
             //Get data set
             this.data = data
-            cy.visit(this.data.url)
+            cy.visit(this.data.baseUrl)
         })
     }
 
